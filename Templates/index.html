@@ -1,3 +1,111 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
 
-{% block content %}hola, visita mi <a class="text-blue-500" href= "{% url 'blog:home' %}"> blog aqui </a>{% endblock content %}
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>PAGINA_WEB_PRUEBA</title>
+    
+        <!-- Sirve para utilizar los iconos de la pagina *boxicons* -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- se agregan los link para diferentes tipos de letras *google.fonts* -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Oswald:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;1,400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        hola, visita mi <a class="text-blue-500" href= "{% url 'blog:home' %}"> blog aqui </a>
+
+        <header class= "Header" id "Inicio">
+            <img src="{% static "iconos/bx-vertical-top.svg" %}" alt="imagenen de imacuna" >
+
+            <nav class= "Menu_navegacion">
+                <a href="#Inicio"> Inicio</a>
+                <a href="#Quienes_somos"> ¿Quienes somos?</a>
+                <a href="#Productos"> Productos</a>
+                <a href="#Contacto"> Contacto</a>
+            </nav>    
+            <div class="Contenedor head">
+                <h1> La innovación del campo en procesos agrícolas </h1>
+                <p class="copy"> Loren ipsum, dolor sit</p>
+            </div>
+
+        </header>
+
+        <main>
+            <section class="services contender" id="servicio" >
+
+                <h2 class= "Subtitulo"> Nuestros servicios </h2>
+
+                <div class="contenedor-servicio">
+
+                    <img src="{% static "logos/logo-imacuna.png" %}" alt="" >
+                    <div class= "Checklist-servicio">
+
+                        <div class= "service">
+
+                            <h3 class= "n-service"><span class="number">1</span>Diseño web</h3>
+                            <p class="copy"> {% lorem 1 b random %}</p>
+
+                        </div>
+
+                        <div class= "service">
+                            
+                            <h3 class= "n-service"><span class="number">2</span>Diseño web</h3>
+                            <p class="copy"> {% lorem 1 b random %}</p>
+
+                        </div>
+
+                        <div class= "service">
+                            
+                            <h3 class= "n-service"><span class="number">3</span>Diseño web</h3>
+                            <p class="copy"> {% lorem 1 b random %}</p>
+
+                        </div>
+
+                    </div>
+                     
+                </div>
+                
+
+            </setion>
+
+            <section class=" gallery" id= "portafolio">
+
+                <div class="contendor">
+                    <h2 class= "Subtitulo"> Galeria </h2>
+                    <div class="contenedor-galeria">
+
+                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-galeria">
+                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-galeria">
+                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-galeria">
+                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-galeria">
+                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-galeria">
+                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-galeria">
+                        
+                    </div>
+
+                </div>
+
+            </section>
+        
+
+        </main>
+        <br>
+        <i class='bx bxl-facebook-circle'></i>
+        <i class='bx bxl-twitter' ></i>
+        <i class='bx bxl-instagram' ></i>
+
+    </body>
+</html>
+
+    
+
+
