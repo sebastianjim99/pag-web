@@ -1,3 +1,5 @@
+
+
 hola al blog list 
 <br>  
 {%for post in posts%}
@@ -5,5 +7,9 @@ hola al blog list
 <a href= "{% url 'blog:update' post.id%}"> update </a>
 <a href= "{% url 'blog:delete' post.id%}"> Borrar </a>
 {%endfor%}
-<br>   
+
+<br>
 <a href= "{% url 'blog:create' %}"> crear </a>
+
+
+

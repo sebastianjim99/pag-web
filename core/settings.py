@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+from unittest.mock import patch
 
 import environ
 
@@ -8,6 +9,10 @@ environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_DIR = os.path.join(BASE_DIR,"img") 
+
+STATIC_DIR2 = os.path.join(BASE_DIR,"CSS")
 
 
 # Quick-start development settings - unsuitable for production
@@ -35,9 +40,12 @@ INSTALLED_APPS = [
 
     ## Agregamos todas las Apps que vamos creando en el proyecto 
     'core',   # Agregamos core
-    'blog',   # Agreamos  blog  
+    'blog',   # Agreamos  blog   
 
 ]
+
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -118,6 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS=[STATIC_DIR, STATIC_DIR2,]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
