@@ -7,8 +7,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type= "text/css" rel="stylesheet" href="{% static '/estilos.css' %} ">
-        <title>PAGINA_WEB_IMACUNA</title>
+        <link type= "text/css" rel="stylesheet" href="{% static "/estilos.css" %} ">
+        <title>PAGINA_WEB_Imacuna</title>
     
         <!-- Sirve para utilizar los iconos de la pagina *boxicons* -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -38,9 +38,9 @@
 
         <main>          <!-- Todo el contenido principal de la pagina web -->
 
-             <!-- hola, visita mi <a class="text-blue-500" href= "{% url 'blog:home' %}"> blog aqui </a> -->
+             <!-- hola, visita mi <a class="text-blue-500" href= "{% url 'blog:home' %}"> blog aqui </a>  -->
             
-            <section class = "contenedor" >
+            <section class = "contenedor" id ="" >
 
                 <div class="Contenedor head">
 
@@ -51,7 +51,7 @@
             </section>
 
 
-            <section class = "contenedor">
+            <section class ="contenedor" id ="¿Quiénes somos?" >
 
                 <div class="cuadro">
 
@@ -111,59 +111,117 @@
                         <h3 class= "n_invest"> Robótica Educativa para cualquier estudiante </h3>
                     
                     </div>
-                   
-
-
-
-
-
-
-                    <img src="{% static "logos/logo-imacuna.png" %}" alt="" >
-                    <div class= "Checklist-servicio">
-
-                        <div class= "service">
-
-                            <h3 class= "n-service"><span class="number">1</span>Diseño web</h3>
-                            <p class="copy"> {% lorem 1 b random %}</p>
-
-                        </div>
-
-                        <div class= "service">
-                            
-                            <h3 class= "n-service"><span class="number">2</span>Diseño web</h3>
-                            <p class="copy"> {% lorem 1 b random %}</p>
-
-                        </div>
-
-                        <div class= "service">
-                            
-                            <h3 class= "n-service"><span class="number">3</span>Diseño web</h3>
-                            <p class="copy"> {% lorem 1 b random %}</p>
-
-                        </div>
-
-                    </div>
                      
                 </section>
-                
-
             </setion>
+
+            <section class="contenedor" id= "Servicios"> 
+
+                <div class="cuadro-dere">
+                    <h2 class= "title-dere"> Servicios </h2>      
+                </div>  
+
+                <div class= "cont-Servicios">
+
+                    <div class="service-1">
+
+                        <img src="{% static "iconos/service_1.png" %}" alt="" class="img-Servicios">
+                        <h3 class= "n-servicio"> Sistemas robotizados </h3>
+
+                    </div>
+
+                    <div class="service-1">
+                        
+                        <img src="{% static "iconos/service_2.png" %}" alt="" class="img-Servicios">
+                        <h3 class= "n-servicio"> Automatización de procesos </h3>
+
+                    </div>
+
+                    <div class="service-1">
+                        
+                        <img src="{% static "iconos/service_3.png" %}" alt="" class="img-Servicios">
+                        <h3 class= "n-servicio"> Inspección de procesos </h3>
+
+                    </div>
+
+                    <div class="service-1">
+                        
+                        <img src="{% static "iconos/service_4.png" %}" alt="" class="img-Servicios">
+                        <h3 class= "n-servicio"> Prototipado </h3>
+
+                    </div>
+                
+                    </div>   
+   
+            </setion>
+
+            <section class="contenedor" id= "" >
+
+                <div class="cuadro">
+
+                    <h2 class= "title-quienes"> Mision </h2>     
+
+                </div>
+
+                <div class="Quienes-somos">
+
+                    <p class="text_valores"> Fortalecer las habilidades investigativas de los estudiantes de Ingeniería Mecánica, Electrónica, Industrial y Sistemas de la Universidad de Ibagué en la Ingeniería Aplicada, siendo un grupo proactivo en todos sus campos de acción, brindando soluciones a las problemáticas del entorno académico e industrial y mejorando de esta forma la calidad de los profesionales de Ingeniería durante el transcurso de su formación universitaria. </p>
+
+                    <img src="{% static "iconos/farm.png" %}" alt="" class="img-Integrantes">
+
+                </div>
+
+            </section>
+
+            <section class="contenedor" id= "vision" >
+
+                <div class="cuadro">
+                    <h2 class= "title-quienes"> Vision </h2>      
+                </div>
+
+                <div class="Quienes-somos">
+
+                    <img src="{% static "iconos/camara.png" %}" alt="" class="img-valores">
+
+                    <p class="text-valores" > Ser un semillero líder en el campo del diseño mecatrónico, reconocido a nivel regional, nacional e internacional por la calidad de sus proyectos de investigación, su constante aporte a la investigación de la universidad y al aporte al conocimiento de sus integrantes. </p>
+
+                </div>
+                
+            </section>
 
             <section class="contenedor" id= "integrantes">
 
-                <div class="contenedor">
-                    <h2 class= "Subtitulo"> Integrantes </h2>
-                    <div class="contenedor-Integrantes">
+                <div class="container-title">
+                    <h2 class= "sub-integrantes"> Equipo de trabajo </h2>
+                </div>
 
-                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-Integrantes">
-                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-Integrantes">
-                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-Integrantes">
-                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-Integrantes">
-                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-Integrantes">
-                        <img src="{% static "integrantes/jimenez.png" %}" alt="" class="img-Integrantes">
-                        
+                <div class="contenedor-Integrantes">
+
+                    <div class="integrantes-1">
+
+                        <img src="{% static "integrantes/Mister2.jpeg" %}" alt="" class="img-Integrantes">
+
+                        <h1 class= "name-integrant"> Jorge Andrés García Vanegas</h1>
+
+                        <p>Profesor tiempo completo Estudiante del Doctorado en Ingeniería Aplicada, Universidad de Castilla-La Mancha (España).
+                            Magíster en Robótica y Automática, Universidad Politécnica de Madrid UPM (España).Ingeniero Electrónico, Universidad de Ibagué (Colombia).
+                            Investigador del grupo de D+TEC y coordinador del semillero de investigación IMACUNA.</p>
+                    
                     </div>
 
+                    <div class="integrantes-1">
+
+                        <img src="{% static "integrantes/Mister2.jpeg" %}" alt="" class="img-Integrantes">
+
+                        <h1 class= "name-integrant"> Jorge Andrés García Vanegas</h1>
+
+                        <p>Profesor tiempo completo Estudiante del Doctorado en Ingeniería Aplicada, Universidad de Castilla-La Mancha (España).
+                            Magíster en Robótica y Automática, Universidad Politécnica de Madrid UPM (España).Ingeniero Electrónico, Universidad de Ibagué (Colombia).
+                            Investigador del grupo de D+TEC y coordinador del semillero de investigación IMACUNA.</p>
+                    
+                    </div>
+                    
+                    
                 </div>
 
             </section>
@@ -177,35 +235,35 @@
 
             </setion> -->
 
-            <section class="contenedor" id= "Servicios"
 
-                <h2 class= "Subtitulo"> Servicios </h2>   
-                <section class= "Services">
-                    <div class= "cont-Servicios"
+            <img src="{% static "logos/logo-imacuna.png" %}" alt="" >
 
-                        <img src="{% static "iconos/service_2.png" %}" alt="" class="img-Servicios">  <!-- esta imagen no sale nose  -->
+            <div class= "Checklist-servicio">
 
-                        <img src="{% static "iconos/service_1.png" %}" alt="" class="img-Servicios">
-                        <h3 class= "n-servicio"> Sistemas robotizados </h3>
+                <div class= "service">
 
-                        <img src="{% static "iconos/service_2.png" %}" alt="" class="img-Servicios">
-                        <h3 class= "n-servicio"> Automatización de procesos </h3>
+                    <h3 class= "n-service"><span class="number">1</span>Diseño web</h3>
+                    <p class="copy"> {% lorem 1 b random %}</p>
 
-                        <img src="{% static "iconos/service_3.png" %}" alt="" class="img-Servicios">
-                        <h3 class= "n-servicio"> Inspección de procesos </h3>
+                </div>
 
-                        <img src="{% static "iconos/service_4.png" %}" alt="" class="img-Servicios">
-                        <h3 class= "n-servicio"> Prototipado </h3>
+                <div class= "service">
                     
-                     </div>
+                    <h3 class= "n-service"><span class="number">2</span>Diseño web</h3>
+                    <p class="copy"> {% lorem 1 b random %}</p>
+
+                </div>
+
+                <div class= "service">
+                    
+                    <h3 class= "n-service"><span class="number">3</span>Diseño web</h3>
+                    <p class="copy"> {% lorem 1 b random %}</p>
+
+                </div>
+
+            </div>
 
 
-                </section>    
-   
-
-             </setion>
-
-        
              <img src="{% static "iconos/bx-vertical-top.svg" %}" alt="" class="icon-Top" >   <!-- icono para ir al principio de la pagina -->
 
 
@@ -240,8 +298,6 @@
 
         <!-- <script src="js/menu.js"> </script>
         <script src="js/lightbox.js"> </script> -->
-
-        
 
     </body>
 </html>
